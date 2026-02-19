@@ -4,6 +4,40 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { BookOpen, Code, Database, Zap } from 'lucide-react'
 
+// const skillsData = [
+//   {
+//     id: 1,
+//     title: 'Web Development',
+//     icon: Code,
+//     description: 'Master modern web technologies',
+//     topics: ['React', 'Next.js', 'Tailwind CSS', 'JavaScript'],
+//     difficulty: 'Beginner to Advanced',
+//   },
+//   {
+//     id: 2,
+//     title: 'Backend Development',
+//     icon: Database,
+//     description: 'Build scalable server solutions',
+//     topics: ['Node.js', 'Express', 'Databases', 'APIs'],
+//     difficulty: 'Intermediate to Advanced',
+//   },
+//   {
+//     id: 3,
+//     title: 'Machine Learning',
+//     icon: Zap,
+//     description: 'Explore AI and data science',
+//     topics: ['Python', 'TensorFlow', 'Data Analysis', 'ML Models'],
+//     difficulty: 'Advanced',
+//   },
+//   {
+//     id: 4,
+//     title: 'Cloud & DevOps',
+//     icon: Zap,
+//     description: 'Deploy and manage applications',
+//     topics: ['AWS', 'Docker', 'Kubernetes', 'CI/CD'],
+//     difficulty: 'Intermediate to Advanced',
+//   },
+// ]
 const skillsData = [
   {
     id: 1,
@@ -18,7 +52,7 @@ const skillsData = [
     title: 'Backend Development',
     icon: Database,
     description: 'Build scalable server solutions',
-    topics: ['Node.js', 'Express', 'Databases', 'APIs'],
+    topics: ['Node.js', 'Express', 'MongoDB', 'REST APIs'],
     difficulty: 'Intermediate to Advanced',
   },
   {
@@ -26,18 +60,86 @@ const skillsData = [
     title: 'Machine Learning',
     icon: Zap,
     description: 'Explore AI and data science',
-    topics: ['Python', 'TensorFlow', 'Data Analysis', 'ML Models'],
+    topics: ['Python', 'TensorFlow', 'Pandas', 'ML Models'],
+    difficulty: 'Advanced',
+  },
+
+  // ✅ NEW TECHNOLOGIES
+
+  {
+    id: 4,
+    title: 'Cloud Computing',
+    icon: Database,
+    description: 'Deploy apps on cloud platforms',
+    topics: ['AWS', 'Azure', 'Google Cloud', 'Serverless'],
+    difficulty: 'Intermediate',
+  },
+  {
+    id: 5,
+    title: 'Cybersecurity',
+    icon: Zap,
+    description: 'Protect systems and networks',
+    topics: ['Ethical Hacking', 'Network Security', 'Kali Linux', 'Cryptography'],
+    difficulty: 'Intermediate to Advanced',
+  },
+  {
+    id: 6,
+    title: 'Data Analytics',
+    icon: Database,
+    description: 'Analyze and visualize data',
+    topics: ['Python', 'SQL', 'Power BI', 'Tableau'],
+    difficulty: 'Beginner to Intermediate',
+  },
+  {
+    id: 7,
+    title: 'Mobile App Development',
+    icon: Code,
+    description: 'Build Android & iOS apps',
+    topics: ['Flutter', 'React Native', 'Kotlin', 'Firebase'],
+    difficulty: 'Intermediate',
+  },
+  {
+    id: 8,
+    title: 'IoT Development',
+    icon: Zap,
+    description: 'Connect hardware with software',
+    topics: ['Arduino', 'Raspberry Pi', 'Sensors', 'NodeMCU'],
+    difficulty: 'Intermediate',
+  },
+  {
+    id: 9,
+    title: 'DevOps Advanced',
+    icon: Database,
+    description: 'Automate deployments & scaling',
+    topics: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions'],
     difficulty: 'Advanced',
   },
   {
-    id: 4,
-    title: 'Cloud & DevOps',
+    id: 10,
+    title: 'Blockchain',
     icon: Zap,
-    description: 'Deploy and manage applications',
-    topics: ['AWS', 'Docker', 'Kubernetes', 'CI/CD'],
-    difficulty: 'Intermediate to Advanced',
+    description: 'Build decentralized apps',
+    topics: ['Solidity', 'Ethereum', 'Smart Contracts', 'Web3'],
+    difficulty: 'Advanced',
   },
+  {
+    id: 11,
+    title: 'UI/UX Design',
+    icon: Code,
+    description: 'Design beautiful interfaces',
+    topics: ['Figma', 'Adobe XD', 'User Research', 'Prototyping'],
+    difficulty: 'Beginner to Intermediate',
+  },
+  {
+  id: 12,
+  title: 'DevOps & Automation',
+  icon: Database,
+  description: 'Automate build, testing, and deployment pipelines',
+  topics: ['Linux', 'Shell Scripting', 'Jenkins', 'GitHub Actions', 'CI/CD Pipelines'],
+  difficulty: 'Intermediate to Advanced',
+},
 ]
+
 
 const aimtCourses = [
   {

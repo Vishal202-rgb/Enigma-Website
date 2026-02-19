@@ -56,16 +56,16 @@ export function Contact() {
                     href="mailto:enigmatech@aimt.co.in"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    enigmatech@aimt.co.in
+                    enigma@ambalika.co.in
                   </a>
                 </div>
               </div>
 
               <div className="flex gap-4 group">
-                <div className="flex-shrink-0 pt-1">
+                {/* <div className="flex-shrink-0 pt-1">
                   <Phone className="w-6 h-6 text-secondary group-hover:scale-110 transition-transform" />
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                   <h4 className="font-semibold text-foreground mb-1">Phone</h4>
                   <a
                     href="tel:+918765432109"
@@ -73,7 +73,7 @@ export function Contact() {
                   >
                     +91 8765 432 109
                   </a>
-                </div>
+                </div> */}
               </div>
 
               <div className="flex gap-4 group">
@@ -98,8 +98,8 @@ export function Contact() {
                   Office Hours
                 </h4>
                 <div className="space-y-2 text-sm text-muted-foreground">
-                  <p>Monday - Friday: 2:00 PM - 6:00 PM</p>
-                  <p>Saturday: 10:00 AM - 2:00 PM</p>
+                  <p>Monday - Friday: 9:00 AM - 4:00 PM</p>
+                  <p>Saturday: 10:00 AM - 3:00 PM</p>
                   <p>Sunday: Closed</p>
                 </div>
               </div>

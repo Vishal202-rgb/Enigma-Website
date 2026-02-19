@@ -74,7 +74,7 @@ export function Navbar() {
             {/* Members Dropdown */}
             <div className="relative group">
               <button className="px-3 py-2 rounded-md text-sm font-medium hover:text-primary transition-colors flex items-center space-x-1">
-                <span>Resources</span>
+                <span>Members</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
               <div className="absolute left-0 mt-0 w-48 bg-card border border-border/50 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
@@ -152,7 +152,7 @@ export function Navbar() {
                 }
                 className="w-full text-left px-3 py-2 rounded-md text-sm font-medium hover:bg-secondary hover:text-secondary-foreground transition-colors flex items-center justify-between"
               >
-                <span>Resources</span>
+                <span>Members</span>
                 <ChevronDown
                   className={`w-4 h-4 transition-transform ${
                     openDropdown === 'resources' ? 'rotate-180' : ''

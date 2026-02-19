@@ -116,7 +116,7 @@ export function Footer() {
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="w-4 h-4 flex-shrink-0" />
-                  enigmatech@aimt.co.in
+                  enigma@ambalika.co.in
                 </a>
               </li>
               <li className="text-muted-foreground">
