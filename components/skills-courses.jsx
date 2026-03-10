@@ -180,11 +180,12 @@ export function SkillsCourses() {
         {/* Header with Enigma Logo */}
         <div className="text-center mb-16 animate-fade-in-up">
           <div className="flex justify-center mb-6">
-            <div className="relative w-24 h-24">
+            <div className="relative w-24 h-24 rounded-xl overflow-hidden">
               <Image
                 src="/aimt.jpeg"
                 alt="Enigma Logo"
                 fill
+                sizes="96px"
                 className="object-contain animate-glow"
               />
             </div>
@@ -306,11 +307,12 @@ export function SkillsCourses() {
                   </div>
                 </div>
 
-                <div className="w-full lg:w-96 h-48 relative">
+                <div className="w-full max-w-xs mx-auto lg:mx-0 lg:w-96 aspect-[2/1] relative rounded-xl overflow-hidden">
                   <Image
                     src="/aimt.jpeg"
                     alt="AIMT"
                     fill
+                    sizes="(max-width: 1024px) 320px, 384px"
                     className="object-contain animate-pulse-slow"
                   />
                 </div>

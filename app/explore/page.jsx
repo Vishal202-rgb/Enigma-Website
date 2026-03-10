@@ -212,6 +212,7 @@ export default function ExplorePage() {
                 src="/enigma.jpg"
                 alt="Enigma Technical Club Logo"
                 fill
+                sizes="36px"
                 className="object-cover"
               />
             </div>
@@ -242,12 +243,13 @@ export default function ExplorePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Logo */}
-            <div className="relative w-48 h-48 lg:w-64 lg:h-64 flex-shrink-0 animate-fade-in-up">
+            <div className="relative w-48 h-48 lg:w-64 lg:h-64 flex-shrink-0 animate-fade-in-up rounded-2xl overflow-hidden">
               <Image
                 src="/aimt.jpeg"
                 alt="Enigma Technical Club"
                 fill
-                className="object-contain rounded-2xl animate-glow"
+                sizes="(max-width: 1024px) 192px, 256px"
+                className="object-contain animate-glow"
               />
             </div>
 
@@ -363,11 +365,12 @@ export default function ExplorePage() {
                 >
                   <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 group">
                     {/* Image */}
-                    <div className="relative h-72 w-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20">
+                    <div className="relative aspect-[3/4] w-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20">
                       <Image
                         src={person.image || '/placeholder.svg'}
                         alt={person.name}
                         fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
@@ -377,6 +380,7 @@ export default function ExplorePage() {
                           src="/enigma.jpg"
                           alt="Enigma"
                           fill
+                          sizes="40px"
                           className="object-cover"
                         />
                       </div>
@@ -412,6 +416,7 @@ export default function ExplorePage() {
                   src="/enigma.jpg"
                   alt="Enigma Logo"
                   fill
+                  sizes="64px"
                   className="object-cover"
                 />
               </div>
@@ -492,11 +497,12 @@ export default function ExplorePage() {
                     in engineering, technology, and management.
                   </p>
                 </div>
-                <div className="relative w-40 h-40 lg:w-56 lg:h-56 flex-shrink-0">
+                <div className="relative w-40 h-40 lg:w-56 lg:h-56 flex-shrink-0 rounded-2xl overflow-hidden">
                   <Image
                     src="/enigma.jpg"
                     alt="AIMT Programs"
                     fill
+                    sizes="(max-width: 1024px) 160px, 224px"
                     className="object-contain animate-pulse-slow"
                   />
                 </div>
@@ -573,6 +579,7 @@ export default function ExplorePage() {
                 src="/aimt.jpeg"
                 alt="Enigma"
                 fill
+                sizes="28px"
                 className="object-cover"
               />
             </div>

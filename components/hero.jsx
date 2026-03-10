@@ -29,6 +29,7 @@ export function Hero() {
                 src="/enigma.jpg"
                 alt="Enigma Technical Club Logo"
                 fill
+                sizes="(max-width: 640px) 112px, 128px"
                 className="object-contain"
               />
             </div>

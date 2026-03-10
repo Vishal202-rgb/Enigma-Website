@@ -67,11 +67,12 @@ function MemberDetailModal({ member, isOpen, onClose }) {
         </div>
 
         <div className="p-8">
-          <div className="relative h-80 w-full rounded-xl overflow-hidden mb-6 bg-gradient-to-br from-primary/20 to-secondary/20">
+          <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden mb-6 bg-gradient-to-br from-primary/20 to-secondary/20">
             <Image
               src={member.image || '/placeholder.svg'}
               alt={member.name}
               fill
+              sizes="(max-width: 640px) 100vw, 600px"
               className="object-cover"
             />
           </div>
@@ -161,11 +162,12 @@ export function Members() {
                 onMouseLeave={() => setHoveredId(null)}
                 onClick={() => setSelectedMember(member)}
               >
-                <div className="relative h-64 w-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20">
                   <Image
                     src={member.image || '/placeholder.svg'}
                     alt={member.name}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

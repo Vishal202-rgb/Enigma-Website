@@ -36,6 +36,7 @@ export function Navbar() {
                 src="/enigma.jpg"
                 alt="Enigma Technical Club Logo"
                 fill
+                sizes="36px"
                 className="object-cover"
               />
             </div>

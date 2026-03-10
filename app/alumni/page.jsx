@@ -107,11 +107,12 @@ function AlumniModal({ member, isOpen, onClose }) {
         </div>
 
         <div className="p-6">
-          <div className="relative h-72 w-full rounded-xl overflow-hidden mb-6 bg-gradient-to-br from-secondary/20 to-accent/20">
+          <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden mb-6 bg-gradient-to-br from-secondary/20 to-accent/20">
             <Image
               src={member.image || '/placeholder.svg'}
               alt={member.name}
               fill
+              sizes="(max-width: 640px) 100vw, 480px"
               className="object-cover"
             />
           </div>
@@ -158,6 +159,7 @@ export default function AlumniPage() {
                 src="/enigma.jpg"
                 alt="Enigma Technical Club Logo"
                 fill
+                sizes="36px"
                 className="object-cover"
               />
             </div>
@@ -192,6 +194,7 @@ export default function AlumniPage() {
                 src="/enigma.jpg"
                 alt="Enigma Logo"
                 fill
+                sizes="80px"
                 className="object-contain"
               />
             </div>
@@ -226,11 +229,12 @@ export default function AlumniPage() {
                   className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl overflow-hidden hover:border-secondary/50 transition-all duration-300 group cursor-pointer h-full hover:shadow-lg hover:shadow-secondary/20"
                 >
                   {/* Image */}
-                  <div className="relative h-56 w-full overflow-hidden bg-gradient-to-br from-secondary/20 to-accent/20">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-secondary/20 to-accent/20">
                     <Image
                       src={member.image || '/placeholder.svg'}
                       alt={member.name}
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
